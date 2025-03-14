@@ -31,6 +31,53 @@ ul {
     list-style: none;
 }
 
+/* Load Font Metal Mania */
+@font-face {
+    font-family: 'Metal Mania';
+    src: url('fonts/Metal Mania.ttf') format('truetype');
+}
+
+/* Logo "ROCKFOLIO" */
+.navbar .logo {
+    font-family: 'Metal Mania', cursive;
+    font-size: 24px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Nama "Achmad Septian Mulia" */
+.header-content h1 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+/* Menu Navigasi */
+.menu li a {
+    font-family: 'Metal Mania', cursive;
+    font-size: 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: var(--accent-color);
+}
+
+.menu li a:hover {
+    color: var(--accent-color);
+}
+
+.navbar .logo {
+    font-family: 'Metal Mania', cursive;
+}
+
+.header-content h1 {
+    font-family: 'Metal Mania', cursive;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -94,6 +141,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Supaya ada jarak dari sisi kiri & kanan */
 }
 
 .logo {
@@ -101,6 +150,15 @@ section {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+.logo {
+    font-family: 'RockFont', sans-serif; /* Untuk ROCKFOLIO */
+}
+
+.header-content h1 {
+    font-family: 'RockFont', sans-serif; /* Untuk Achmad Septian Mulia */
+}
+
 
 .logo span {
     color: var(--accent-color);
@@ -145,6 +203,17 @@ section {
     color: white;
     margin-top: 0;
     padding-top: 0;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sesuaikan tingkat gelapnya */
+    z-index: 0;
 }
 
 .header .overlay {
