@@ -98,6 +98,110 @@ section {
     color: var(--text-color);
 }
 
+/* Tentang Saya - Layout Baru */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.content-section {
+    flex: 1;
+    min-width: 280px;
+}
+
+.photo-section {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.card {
+    background-color: #252a3d;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.item-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.item-subtitle {
+    color: #b3b9c5;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.date {
+    color: #b3b9c5;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column-reverse;
+    }
+    
+    .photo-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.blog-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Style untuk link blog */
+.blog-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.blog-link:hover .blog-item {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item {
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
 .section-title::after {
     content: '';
     position: absolute;
